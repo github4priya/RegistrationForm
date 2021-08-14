@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        navbar design
+    </title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+        </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+
+</head>
+
+<body>
+    <!-- NAVBAR STARTING -->
+    <!-- Use navbar class to the navbar logo
+        to the far left of the screen-->
+    <nav class=" navbar navbar-expand-lg
+        navbar-light bg-light fixed-top py-lg-0 ">
+
+        <a class="navbar-brand" href="#">
+
+            <!-- Add logo with size of 90*80 -->
+            <img src="data:image/png;base64,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"
+                width="90" height="80" alt="">
+        </a>
+
+            <h1 style="color: rgb(95, 1, 124);">Covid-19 Tracker</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>
